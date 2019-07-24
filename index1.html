@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to Ajax</h1>
+    <div id="output"></div>
+    <script>
+        var myfriends = {
+            "friends":[
+                {"last":"JONES", "first":"John"},
+                {"last":"Smith", "first":"Agent"},
+                {"last":"Orange", "first":"Light"},
+                {"last":"Blue", "first":"Deep"},
+            ]
+        };
+        var users = myfriends.friends;
+        var html = ' ';
+        for(i =0; i<myfriends.friends.length; i++){
+            html += ' <p> ' + (myfriends.friends[i].first);
+        }
+        document.getElementById("output").innerHTML = html;
+    </script>
+
+</body>
+
+</html>
